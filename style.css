@@ -18,7 +18,7 @@ p {font-size: 1em; color: #777;}
     width: 319px; 
     height: 96px; 
     float: left; 
-    background: url(../img/logotipo.png) no-repeat; 
+    background: url(../img/logotipo2.png) no-repeat; 
     font-size: 0;
 }
 
@@ -88,32 +88,103 @@ p {font-size: 1em; color: #777;}
     color: rgb(193, 122, 199);
 }
 
-/* Roupas */
+/* Principal */
 .principal {
     width: 100%;
     float: left;
     padding: 20px 8%;
 }
 
-.roupas {
+.produtos {
     width: 70%;
+    margin-top: 0%;
     float: left;
-    padding: 0 20px 20px 0;
 }
 
-.roupas h2 {
+/* Figuras da esquerda */
+.esquerda {
+    float: left;
+    width: 45%;
+    min-width: 300px;
+    margin-right: 5%;
+    margin-top: 4%;
+    cursor: pointer;
+}
+
+.esquerda h2 {
     margin-bottom: 15px;
 }
 
-.roupas img {
-    width: 50%;
+.fig-e {
+    width: 100%;
     float: left;
-    border-radius: 5px;
-    margin: 0 15px 0px 0;
+    position: relative;
 }
 
-.roupas p {
+.fig-e img {
+    float: left;
+    border-radius: 5px;
+}
+
+.fig-e figcaption {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
     text-align: justify;
+    position: absolute;
+    color: #fff;
+    background-color: rgba(66, 41, 70, 0.61);
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+.fig-e:hover figcaption {
+    opacity: 1;
+}
+
+/* Figuras da direita */
+.direita {
+    float: right;
+    width: 45%;
+    min-width: 300px;
+    margin-right: 5%;
+    margin-top: 4%;
+    cursor: pointer;
+}
+
+.direita h2 {
+    margin-bottom: 15px;
+}
+
+.fig-d {
+    width: 100%;
+    float: right;
+    position: relative;
+}
+
+.fig-d img {
+    float: right;
+    border-radius: 5px;
+}
+
+.fig-d figcaption {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    position: absolute;
+    color: #fff;
+    background-color: rgba(66, 41, 70, 0.61);
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+.fig-d:hover figcaption {
+    opacity: 1;
 }
 
 /* Barra lateral */
@@ -123,6 +194,7 @@ p {font-size: 1em; color: #777;}
     padding: 10px 20px;
     background-color: #dda2d83d;
     border-radius: 5px;
+    margin-top: 4%;
 }
 
 .onde-estamos h2 {
